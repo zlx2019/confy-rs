@@ -75,7 +75,7 @@ jobs:
 
       # 创建 GitHub Release，正文取自上一步生成的 Changelog
       - name: Create release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           body_path: CHANGES.md
           token: ${{ secrets.GITHUB_TOKEN }}
