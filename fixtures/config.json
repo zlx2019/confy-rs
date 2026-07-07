@@ -1,0 +1,9 @@
+{
+  "name": "confy-demo",
+  "debug": false,
+  "tags": ["alpha", "beta"],
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8080
+  }
+}

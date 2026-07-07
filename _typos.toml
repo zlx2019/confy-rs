@@ -1,0 +1,34 @@
+# typos 用于检查代码和文档中的英文单词拼写错误。
+
+
+# 文件过滤
+[files]
+# 排除不需要检测的文件
+extend-exclude = [
+  "CHANGELOG.md"
+]
+ignore-hidden = true  # 忽略隐藏文件
+ignore-vcs = true     # 忽略 .gitignore 中的文件
+ignore-dot = true     # 忽略 .ignore 中的文件
+
+# 检查行为
+[default]
+check-filename = true # 是否检查文件名
+check-file = true     # 是否检查文件内容
+locale = "en"
+binary = false        # 是否检查二进制文件
+unicode = true        # 是否支持 Unicode 标识符
+# 按正则忽略内容（可实现行内 disable 注释）
+extend-ignore-re = [
+    "(?Rm)^.*(#|//)\\s*spellchecker:disable-line$",
+    "(?s)(#|//)\\s*spellchecker:off.*?\\n\\s*(#|//)\\s*spellchecker:on",
+]
+extend-ignore-identifiers-re = []    # 按正则忽略标识符
+extend-ignore-words-re = []          # 按正则忽略单词
+
+[default.extend-words]
+
+
+[type.proto]
+extend-glob = ["*.proto"]
+check-file = false

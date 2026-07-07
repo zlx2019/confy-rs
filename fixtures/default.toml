@@ -1,0 +1,7 @@
+name = "layered-demo"
+debug = false
+tags = ["default"]
+
+[server]
+host = "0.0.0.0"
+port = 8000

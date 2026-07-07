@@ -1,0 +1,6 @@
+# Clippy 配置
+
+
+# 允许在单元测试 | 集成测试中使用 unwrap、expect.
+allow-unwrap-in-tests = true
+allow-expect-in-tests = true
