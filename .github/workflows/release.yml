@@ -30,7 +30,7 @@ jobs:
             exit 1
           fi
 
-      - uses: taiki-e/install-action@v2
+      - uses: taiki-e/install-action@v2.85.6
         with:
           tool: nextest
       - name: cargo nextest
